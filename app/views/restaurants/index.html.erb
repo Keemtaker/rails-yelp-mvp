@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Restaurants</h2>
+  <ul class="list-unstyled">
+    <% @restaurants.each do |restaurant| %>
+    <li>
+      <h3><%= link_to restaurant.name, restaurant_path(restaurant) %></h3>
+      <p>Category: <%= restaurant.category.capitalize %> </p>
+      <p><%= restaurant.address %> | Phone: <%= restaurant.phone_number %></p>
+    </li>
+    <% end %>
+  </ul>
+</div>

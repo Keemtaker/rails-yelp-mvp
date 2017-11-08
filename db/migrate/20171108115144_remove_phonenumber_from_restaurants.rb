@@ -1,0 +1,5 @@
+class RemovePhonenumberFromRestaurants < ActiveRecord::Migration[5.0]
+  def change
+    remove_column :restaurants, :phonenumber, :integer
+  end
+end
